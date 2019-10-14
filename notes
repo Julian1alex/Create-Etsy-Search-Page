@@ -1,0 +1,242 @@
+.bodycontainer  {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: red;
+    display: flex;
+
+}
+
+/* Top Left of page*/
+.topbar {
+    display: flex none;
+    height: 25%;
+    width: auto;
+    background-color: green;
+}
+
+.searchbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+}
+
+#site-search {
+    height: 30px;
+    width: 50%;
+}
+
+#search {
+    width: 100%;
+    display: flex; 
+}
+
+#search button {
+    height: 30px;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+#etsytext p {
+    display: flex;
+    font-size: 45px;
+    color: orange;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+/* Top right section*/
+
+.toprightbar {
+    display: flex;
+    }
+    
+    .srs {
+    display: flex; 
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    
+    }
+    
+    
+    
+    .hyperlinks {display: flex none}
+    
+    main {width: 1200px;
+    background-color: green;
+    margin: auto;
+    display: flex;}
+
+
+    ---------------------
+    Part of the main body 
+
+    HTML - <nav class="topfilter">
+
+                </nav>
+                <section class="sortresults">
+
+
+                </section>
+
+    CSS 
+
+
+    ------------------------Old Edited Html--------------------
+
+    <header class="topbar">
+                <section class="searchbar">
+                    <div id="etsytext">
+                    <p>Etsy</p>
+                    </div>
+                    <div id="search">
+                        <input type="text" id="site-search"><button>Search</button>      
+                    </div>
+                </section>
+                <section>
+                <nav class="toprightbar">   
+                    <div>
+                    <ul class="srs">
+                        <li><a href="placeholder">Sell on Etsy</a></li>
+                        <li><a href="placeholder">Register</a></li> 
+                        <li><button><a href="placeholder">Sign In</a></button></li>
+                    </ul>
+                    
+                    </div>
+                    <nav>
+                            <Ul class="hyperlinks"></Ul>
+                                <li><a href="placeholder">Jewelry and Accessories</a></li>
+                                <li><a href="placeholder">Clothing and Shoes</a></li>
+                                <li><a href="placeholder">Home and Living</a></li>
+                                <li><a href="placeholder">Wedding and Party</a></li>
+                                <li><a href="placeholder">Toys and Entertainment</a></li>
+                                <li><a href="placeholder">Art and Collectibles</a></li>
+                                <li><a href="placeholder">Craft Supplies</a></li>
+                                <li><a href="placeholder">Vintage</a></li>
+                                <li><a href="placeholder">Gifts</a></li>
+                            </Ul>
+                        </nav>
+                </nav>
+                </section>
+                
+            </header
+
+
+----------------Use this after restructure------
+
+ .topbar {
+        display: flex;
+        height: 150px;
+        background-color: purple;
+        justify-content: space-between;
+    }
+    
+    
+    .searchbar {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    
+    #site-search {
+        height: 30px;
+    }
+    
+    #search {
+        display: flex; 
+    }
+    
+    #search button {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #etsytext p {
+        display: flex;
+        font-size: 45px;
+        margin: 0;
+    }
+    
+    /* Top right section*/
+    
+    .toprightbar {
+        display: flex;
+        }
+        
+        .srs {
+        display: flex; 
+        justify-content: center;
+        justify-items: center;
+        display: flex;
+        
+        }
+        
+        .hyperlinks { color: white; 
+            text-align: center; 
+            font-style: bold; 
+            width: auto;
+            display: flex;
+            justify-content: center;
+        }
+            
+        .hyperlinks li {
+            margin: 5px;
+            padding-top: 5px;
+        }
+
+/* Main Body */
+
+    .maincontent { 
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .sidefilter {
+        height: 150px;
+    }
+
+
+
+/* Whiskey Items Below */
+
+
+    .whiskeyitems {
+        
+        display: grid;
+        grid-template-columns: repeat(1fr 4fr);
+        gap: 10px;
+   
+    }
+    
+    .product {
+        display: grid;
+        cursor: pointer;
+        border: 1px solid black;
+    }
+
+    .product img {
+        width: 100%;
+
+    }
+
+    .product h3 {
+        margin: 0;
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+    }
+
+    .product p {
+        margin: 0;
+    }
+
+    .desc {
+        display: flex;
+        justify-content: space-between;
+    }
+
+   

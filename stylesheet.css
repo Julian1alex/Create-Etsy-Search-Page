@@ -1,0 +1,214 @@
+*, * ::before, *::after { 
+    box-sizing: inherit;
+    margin: auto;
+    padding: 0;
+}
+
+html { 
+    box-sizing: border-box; 
+    font-family: sans-serif;
+
+}
+
+li {
+    margin-left:0;
+    list-style: none;
+}
+
+li a {list-style: none}
+
+.bodycontainer {
+margin: auto;
+width: 1200px;}
+
+header {
+    /* background-color:purple; */
+    height: 20%;
+}
+
+.upperbar {display: flex;
+/* background-color: red; */
+width: 100%;
+margin-top: 15px;}
+
+#leftupper {display: flex;
+    /* background-color: orange; */
+width: 50%;}
+
+h2 {margin-left: 0;
+    color: orange;
+}
+
+#title p {
+font-size: 30px;
+}
+
+#searchbar {margin-right: 0;}
+
+
+#searchbar input {
+    height: 30px;
+    width: 400px;
+
+}
+
+#searchbutton {margin-left: 0;
+}
+
+#searchbutton button {
+    width:100px;
+    height: 30px;
+    margin-left: 0;
+
+}
+
+#rightupper {display: flex;
+    /* background-color: seagreen; */
+width: 50%;
+}
+
+#rightupper div {
+
+    margin:0;
+}
+
+#soe {
+height: 30px;
+}
+
+#reg {
+    height: 30px;
+}
+
+#si {
+    height: 30px;
+}
+
+.icons {display: flex;
+}
+
+.buttons {display: flex;}
+
+/* Middle Bar */
+
+.middlebar { display: flex;
+width: 100%;
+height:50px;}
+
+.hyperlinks1 {
+margin-left: 0;
+margin-right: 0;
+
+}
+
+.linkbar {
+margin-left:0;
+margin-right:0;
+
+}
+
+/* background-color: tan; */
+
+/* Lower Bar */
+
+.lowerbar { display: flex; 
+width: 100%;
+height: 50px;
+/* background-color: tomato; */
+}
+
+
+
+div.filterbar button { height: 40px;
+    background-color: orange;
+}
+div.filterbar button a{ 
+
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.filterbar {margin: 0;}
+
+#sib {
+
+    height: 30px;
+}
+
+a { text-decoration: none;
+background: none;
+color: black;}
+
+/* body */
+
+/* Main Body */
+
+.maincontent { 
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidefilter {
+    height: auto;
+    margin: 0;
+    /* background-color: pink; */
+}
+
+/* Whiskey Items Below */
+
+
+#whiskeyitems {
+        
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+.product {
+    display: grid;
+    cursor: pointer;
+}
+
+.product img {
+    width: 100%;
+
+}
+
+.product h3 {
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.product p {
+    margin: 0;
+}
+
+.desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product img {
+    width: 240px;
+    height: 240px;
+}
+
+.sidefilter li {
+padding-left: 10px;
+padding-bottom: 1px;
+
+}
+.sidefilter h5 {
+padding-bottom: 5px;
+padding-bottom: 1px;
+
+}
+
+h5 { font-size: 15px;}
